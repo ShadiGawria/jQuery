@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>GlödLampor</title>
+    <!-- css -->
+    <link rel="StyleSheet" href="StyleSheet.css">
+
+</head>
+<body>
+    <!-- info -->
+    <p id="info">First Choose the number of the bulbs and then press the "Show the bulbs"'s button: </p>
+    <!-- Range -->
+    <input type="range" name="rangeInput" min="1" max="10" onchange="updateTextInput(this.value);">
+    <!-- TextBox -->
+    <input type="text" id="textInput" value="">
+    <!-- ShowButton -->
+    <button id="numberOfBulbsButton">Show the bulbs</button>
+    <!-- TurnOnButton -->
+    <button id="turnONButton">Turn on the next bulb</button>
+    <!-- Images -->
+    <figure id="imgs">
+
+    </figure>
+
+    <!-- CurrentBulb -->
+    <p id="currentBulb">Current bulb:1 </p>
+
+    <!-- jQuery Source -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+            crossorigin="anonymous"></script>
+    <!-- JavaScript Source -->
+    <script src="JavaScript.js"></script>
+</body>
+</html>
